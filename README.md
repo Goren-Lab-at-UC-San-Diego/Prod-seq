@@ -68,30 +68,30 @@ All the output files are tab-delimited files where the first row is the column h
 
 **Note:** as the two-round GLM uses the non-present control ab-oligo(s) (default: HA-tag) in the prediction of the background levels, output files that store post-GLM outputs (_PredictedBackground_, _PPIEnrichmentLevels_) do not contain values related to the non-present control ab-oligos(s).
 
-  * output_prefix.QCCnts.tsv
+  * **_output_prefix.QCCnts.tsv_**
     
     For each sample, the read depth, number of detected Prod-seq product read pairs, UMI-deduplicated number of product read pairs, and the number of self-self byproduct read pairs for each protein barcode.
 
-  * output_prefix.RawUMIPairs.tsv
+  * **_output_prefix.RawUMIPairs.tsv_**
 
     For each sample, the number of UMI pairs for each pairwise protein combination (excluding the self-self byproducts).
 
-  * output_prefix.DepthNormedUMIPairs.tsv
+  * **_output_prefix.DepthNormedUMIPairs.tsv_**
 
     For each sample, the number of UMI pairs for each pairwise protein combination (excluding the self-self byproducts) after normalizing by the total number of UMI combinations in all the samples listed in this file.
 
-  * output_prefix.PredictedBackground.tsv
+  * **_output_prefix.PredictedBackground.tsv_**
 
     The level of background predicted by the two-round GLM for each PPI in each sample.
 
-  * output_prefix.PPIEnrichmentLevels.tsv
+  * **_output_prefix.PPIEnrichmentLevels.tsv_**
 
     The enrichment value of each PPI in each sample calculated using the predicted background levels.
 
 
 **Note:** the script runs a two-round GLM to estimate the PPI general background distribution, where the first round is only to exclude extreme positive outliers. In other words, it is expected that the first round of maximum likelihood estimation does not fully converge and it is normal behavior that the first round of GLM outputs the following warning messages:
 ```
-	RuntimeWarning: invalid value encountered in subtract
+RuntimeWarning: invalid value encountered in subtract
 np.max(np.abs(fsim[0] - fsim[1:])) <= fatol):
 
 message: Maximum number of iterations has been exceeded.
@@ -101,7 +101,7 @@ success: False
 The second round of GLM is expected to terminate successfully; example terminal message:
 
 ```
-	message: Optimization terminated successfully.
+message: Optimization terminated successfully.
 success: True
 ```
 
