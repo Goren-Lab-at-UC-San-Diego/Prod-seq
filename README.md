@@ -212,21 +212,40 @@ from ProdSeqAnalysis_utils import *
     <br>
 
 
-  * **GroupedPPIHeatmap**_(QC_tsv_path)_
+  * **GroupedPPIHeatmap**_(PPI_signals, sample_nms, PPI_pairnms, bc_pair_groups, plot_vmax,
+                      plot_size = (6, 6),
+                      plot_vmin = [],
+                      plot_cmaps = [],
+                      sample_group_sizes = [],
+                      cbar_ax_locs = [])_
 
     Generate PPI enrichment heatmaps for Prod-seq data visualization.
     
     **_Arguments:_**
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _file\_path_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; path to the TSV file
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _PPI_signals_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the PPI enrichment values (Note: to reproduce the results in the Prod-seq manuscript, the normalization of each value to MED12&CycC in the same sample by dividing needs to be explicitly performed)
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _sample_nms_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the names of the samples
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _PPI_pairnms_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the names of all PPIs in **PPI_signals**
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _bc_pair_groups_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a two-level nested list, where each inner list is a group of PPIs to be plotted under the same color map
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _plot_vmax_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a list of maximum values to be used for each group of PPIs' colorbar
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _plot_size_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the size of the resulting figure
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _plot_vmin_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a list of the minimum values to be used for each group of PPIs' colorbar
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _plot_cmaps_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a list of color maps to use for the groups of PPIs specified in **bc_pair_groups**
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _sample_group_sizes_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a list of integers denoting the group size for samples in **sample_nms** (to decide where to draw thick lines to separate the groups)
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _cbar_ax_locs_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a list where each component specifies the location and size of one PPI group heatmap's colorbar (using matplotlib's _add_axes_ function)
 
     **_Return:_**
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _values_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; values in the TSV file
-
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _sample_nms_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sample (row) names in the TSV file
-
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _col_nms_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; column names in the TSV file
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _fig_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the Prod-seq value heatmap
 
     <br>
 
