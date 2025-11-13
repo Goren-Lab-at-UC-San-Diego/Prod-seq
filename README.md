@@ -158,6 +158,23 @@ All the output files are tab-delimited files where the first row is the column h
     For each sample, the number of UMIs for each protein target.
 
 
+<br>
+
+<br>
+
+### ProdSeqAnalysis_utils.py
+
+This file contains the data processing and analysis functions used in **ProdSeq_Data_Analysis.py** and **PQSeq_Data_Analysis.py**. In addition, this file provides useful file reading and plotting functions (documentation in the section below). To import functions from this script, include the following lines:
+
+```
+import sys
+sys.path.insert(1, '<path_to_ProdSeqAnalysis_utils.py>')
+from ProdSeqAnalysis_utils import *
+```
+
+**<ins>Documentation of additional functions in ProdSeqAnalysis_util.py:</ins>**
+
+
 
 
 
