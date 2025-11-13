@@ -177,15 +177,15 @@ from ProdSeqAnalysis_utils import *
 
 **<ins>Documentation of additional functions:</ins>**
 
-  * **_ReadProdTSVFile_**_(file_path)_
+  * **ReadProdTSVFile**_(file_path)_
 
     Read TSV output files into sample names (row names), column names, and values as lists.
 
-    _Arguments:_
+    **_Arguments:_**
 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _file\_path_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; path to the TSV file
 
-    _Return:_
+    **_Return:_**
 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _values_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; values in the TSV file
 
@@ -195,15 +195,15 @@ from ProdSeqAnalysis_utils import *
 
     <br>
 
-  * **_GenerateProdQCPlots_**_(QC_tsv_path)_
+  * **GenerateProdQCPlots**_(QC_tsv_path)_
 
     Generate QC plots for Prod-seq PPI sequencing result.
 
-    _Arguments:_
+    **_Arguments:_**
 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _QC_tsv_path_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; path to the _output_prefix.QCCnts.tsv_ output file
 
-    _Return:_
+    **_Return:_**
 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _fig1_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a figure plotting the proportion of read depth that are (a) correct Prod-seq product and (b) deduplicated UMI combinations
 
@@ -212,15 +212,15 @@ from ProdSeqAnalysis_utils import *
     <br>
 
 
-  * **_GroupedPPIHeatmap_**_(QC_tsv_path)_
+  * **GroupedPPIHeatmap**_(QC_tsv_path)_
 
     Generate PPI enrichment heatmaps for Prod-seq data visualization.
     
-    _Arguments:_
+    **_Arguments:_**
 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _file\_path_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; path to the TSV file
 
-    _Return:_
+    **_Return:_**
 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _values_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; values in the TSV file
 
@@ -231,17 +231,17 @@ from ProdSeqAnalysis_utils import *
     <br>
 
 
-  * **_CalcPQFromUMICnts_**_(raw_cnts, control_idx = [7, 8])_
+  * **CalcPQFromUMICnts**_(raw_cnts, control_idx = [7, 8])_
 
     Convert Prod-seq protein quantification (PQ) readout into (each sample separately) UMI proportions and UMI counts normalized by positive control protein barcodes.
     
-    _Arguments:_
+    **_Arguments:_**
 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _raw_cnts_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; raw UMI counts for each sample (can use the output from the function _ReadProdTSVFile_)
 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _control_idx_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; index for the positive control proteins in the samples (default: 7 and 8 for MED12 and CyclinC)
 
-    _Return:_
+    **_Return:_**
 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _PQ_prop_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for each sample, the PQ UMI distribution normalized by the total number of UMIs in that sample
 
@@ -250,11 +250,11 @@ from ProdSeqAnalysis_utils import *
     <br>
 
 
-  * **_PQHeatmap_**_(plot_data, sample_labels, plot_barcodes = bc_nms_default, cmap_use = "Greys")_
+  * **PQHeatmap**_(plot_data, sample_labels, plot_barcodes = bc_nms_default, cmap_use = "Greys")_
 
     Generate a PQ value heatmap for PQ data visualization.
     
-    _Arguments:_
+    **_Arguments:_**
 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _plot_data_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; data to plot (recommended: log of _PQ_Ctrl_normed_ values from the function _CalcPQFromUMICnts_)
 
@@ -264,7 +264,7 @@ from ProdSeqAnalysis_utils import *
 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _cmap_use_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the color map to use for the heatmap
 
-    _Return:_
+    **_Return:_**
 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _fig_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the PQ value heatmap
 
