@@ -193,24 +193,82 @@ from ProdSeqAnalysis_utils import *
 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **col_nms**: column names in the TSV file
 
+    <br>
+
   * **_GenerateProdQCPlots_**
 
-    Generate QC plots for Prod-seq PPI sequencing result. 
+    Generate QC plots for Prod-seq PPI sequencing result.
+
+    _Arguments:_
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **file\_path**: path to the TSV file
+
+    _Return:_
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **values**: values in the TSV file
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **sample_nms**: sample (row) names in the TSV file
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **col_nms**: column names in the TSV file
+
+    <br>
 
 
   * **_GroupedPPIHeatmap_**
 
     Generate PPI enrichment heatmaps for Prod-seq data visualization.
+    
+    _Arguments:_
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **file\_path**: path to the TSV file
+
+    _Return:_
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **values**: values in the TSV file
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **sample_nms**: sample (row) names in the TSV file
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **col_nms**: column names in the TSV file
+
+    <br>
 
 
   * **_CalcPQFromUMICnts_**
 
     Convert Prod-seq protein quantification (PQ) readout into (each sample separately) UMI proportions and UMI counts normalized by positive control protein barcodes.
+    
+    _Arguments:_
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **file\_path**: path to the TSV file
+
+    _Return:_
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **values**: values in the TSV file
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **sample_nms**: sample (row) names in the TSV file
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **col_nms**: column names in the TSV file
+
+    <br>
 
 
   * **_PQHeatmap_**
 
     Generate PQ value heatmaps for PQ data visualization.
+    
+    _Arguments:_
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **file\_path**: path to the TSV file
+
+    _Return:_
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **values**: values in the TSV file
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **sample_nms**: sample (row) names in the TSV file
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **col_nms**: column names in the TSV file
+
+    <br>
 
 
 
