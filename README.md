@@ -181,13 +181,17 @@ from ProdSeqAnalysis_utils import *
 
     Read TSV output files into sample names (row names), column names, and values as lists.
 
-    _Input:_
+    _Arguments:_
 
-    &nbsp;&nbsp;&nbsp; TExt
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TExt
 
-    &nbsp;&nbsp;&nbsp; TExt
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TExt
 
-    &nbsp;&nbsp;&nbsp; TExt
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TExt
+
+    _Return:_
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TEXT
 
     
 
