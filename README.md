@@ -92,7 +92,7 @@ All the output files are tab-delimited files where the first row is the column h
 
     The level of background predicted by the two-round GLM for each PPI in each sample.
 
-  * **_output_prefix.PPIEnrichmentLevels.tsv_**
+  * **_output_prefix.PPIEnrichment.tsv_**
 
     The enrichment value of each PPI in each sample calculated using the predicted background levels.
 
