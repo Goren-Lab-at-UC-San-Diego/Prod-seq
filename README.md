@@ -39,7 +39,7 @@ Usage:
 
 <br>
 
-**Positional arguments:**
+**<ins>Positional arguments:</ins>**
 
   * _sampletsv_  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Path to the sample specification tsv file
 
@@ -51,7 +51,7 @@ Usage:
 
 <br>
 
-**Optional arguments:**
+**<ins>Optional arguments:</ins>**
 
   * _--barcodetsv BARCODETSV_  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Path to the barcoce list tsv file
 
@@ -67,7 +67,7 @@ Usage:
 
 <br>
 
-**Output files:**
+**<ins>Output files:</ins>**
 
 All the output files are tab-delimited files where the first row is the column headers, and each of the remaining rows corresponds to one Prod-seq sample. The entry values of the output tsv files differ (detailed below).
 
