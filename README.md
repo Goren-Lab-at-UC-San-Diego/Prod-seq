@@ -10,7 +10,7 @@ conda env create -f prodseq_analysis_environment.yml
 
 **Note:** if a different environment name is desired, the user can change the first line of the .yml file to “name: desired_environment_name”
 
-2. Download _ProdSeq_Data_Analysis.py_, _PQ_Data_Analysis.py_ and _ProdSeqAnalysis_utils.py_ to the desired directory.
+2. Download _ProdSeq_Data_Analysis.py_, _PQSeq_Data_Analysis.py_ and _ProdSeqAnalysis_utils.py_ to the desired directory.
 3. Make the python scripts executable
    ```
    conda activate <environment_name>
@@ -109,6 +109,55 @@ The second round of GLM is expected to terminate successfully; example terminal 
 message: Optimization terminated successfully.
 success: True
 ```
+
+
+<br>
+
+<br>
+
+### PQSeq_Data_Analysis.py
+
+This is the command-line executable for read processing of protein quantification subroutine.
+
+Usage: 
+
+```
+<full_download_path>/PQSeq_Data_Analysis.py [--barcodetsv BARCODETSV] sampletsv output_prefix
+```
+
+<br>
+
+**<ins>Positional arguments:</ins>**
+
+  * _sampletsv_  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Path to the sample specification tsv file
+
+    This tsv file should contain two columns, where the first column dictates a sample’s name, and the second column specifies the path to the sample’s read1 fastq.gz files. 
+      
+  * _output_prefix_  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Output prefix
+
+    This specifies the prefix of the output files (see “Output files” for more information).
+
+<br>
+
+**<ins>Optional arguments:</ins>**
+The same as **ProdSeq_Data_Analysis.py**.
+
+<br>
+
+**<ins>Output files:</ins>**
+
+All the output files are tab-delimited files where the first row is the column headers, and each of the remaining rows corresponds to one Prod-seq protein quantification sample. The entry values of the output tsv files differ (detailed below).
+
+  * **_output_prefix.PQQCCnts.tsv_**
+    
+    For each sample, the read depth, number of detected product reads, UMI-deduplicated number of product reads.
+
+  * **_output_prefix.PQRawUMIs.tsv_**
+
+    For each sample, the number of UMIs for each protein target.
+
+
+
 
 
 
