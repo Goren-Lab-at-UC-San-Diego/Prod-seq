@@ -25,3 +25,14 @@ conda env create -f prodseq_analysis_environment.yml
    ```
 
 
+## Basic Usage
+
+### ProdSeq_Data_Analysis.py
+
+This is the main analysis script and the command-line executable.
+
+Usage: 
+
+```
+<full_download_path>/ProdSeq_Data_Analysis.py [--barcodetsv BARCODETSV] sampletsv output_prefix
+```
