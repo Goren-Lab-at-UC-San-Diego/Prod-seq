@@ -172,7 +172,7 @@ sys.path.insert(1, '<path_to_ProdSeqAnalysis_utils.py>')
 from ProdSeqAnalysis_utils import *
 ```
 
-**<ins>Documentation of additional functions in ProdSeqAnalysis_util.py:</ins>**
+**<ins>Documentation of additional functions:</ins>**
 
 
 
