@@ -56,6 +56,8 @@ Usage:
 The first column should contain the target/protein name of the protein barcodes.
 The second column of the corresponding lines should contain the reverse complement of the barcode sequences for each protein target. For example, in the default Prod-seq Ab-oligo set, the Ab-oligo sequence of SUZ12 is:
 
+    $${\color{black}CCTTGAACCACTTCTCTA} {\color{green}AATCGACTCA} \color{black}NNNNNNNNNNNNNNNgcttacaaccagactg}$$
+
     CCTTGAACCACTTCTCTAAATCGACTCANNNNNNNNNNNNNNNgcttacaaccagactg
 
     so the second column of SUZ12 should enter the reverse complement of $${\color{green}AATCGACTCA}$$, which is $${\color{green}TGAGTCGATT}$$.
