@@ -37,6 +37,7 @@ Usage:
 <full_download_path>/ProdSeq_Data_Analysis.py [--barcodetsv BARCODETSV] sampletsv output_prefix
 ```
 
+<br>
 
 **Positional arguments:**
 
@@ -47,6 +48,8 @@ Usage:
   * _output_prefix_  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Output prefix
 
     This specifies the prefix of the output files (see “Output files” for more information).
+
+<br>
 
 **Optional arguments:**
 
@@ -61,6 +64,8 @@ Usage:
     The third column should be “control” for each control Ab-oligo, and empty for the other Ab-oligos.
 
     **Note:** it is required to have at least one control Ab-oligo.
+
+<br>
 
 **Output files:**
 
