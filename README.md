@@ -7,5 +7,21 @@ This repository hosts the source code for the data processing and analysis model
 conda env create -f prodseq_analysis_environment.yml
 ```
 **Note:** for users with experience with conda, the packages listed in the .yml file can also be installed manually (the packages are all commonly-used packages)
+
 **Note:** if a different environment name is desired, the user can change the first line of the .yml file to “name: desired_environment_name”
+
+2. Download _ProdSeq_Data_Analysis.py_, _PQ_Data_Analysis.py_ and _ProdSeqAnalysis_utils.py_ to the desired directory.
+3. Make the python scripts executable
+   ```
+   conda activate <environment_name>
+   chmod +x <full_download_path>/ProdSeq_Data_Analysis.py
+   chmod +x <full_download_path>/PQSeq_Data_Analysis.py
+   chmod +x <full_download_path>/ProdSeqAnalysis_utils.py
+   ```
+
+4. To check that the scripts are ready to execute, run the following command. Correct setup should output the helper message specifying the usage of the script and arguments and options:
+   ```
+   <full_download_path>/ProdSeq_Data_Analysis.py [--barcodetsv BARCODETSV] sampletsv output_prefix
+   ```
+
 
