@@ -181,6 +181,16 @@ from ProdSeqAnalysis_utils import *
 
     Read TSV output files into sample names (row names), column names, and values as lists.
 
+    _Input:_
+
+    &nbsp; TExt
+
+    &nbsp; TExt
+
+    &nbsp; TExt
+
+    
+
 
   * **_GenerateProdQCPlots_**
 
