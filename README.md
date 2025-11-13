@@ -24,6 +24,9 @@ conda env create -f prodseq_analysis_environment.yml
    <full_download_path>/ProdSeq_Data_Analysis.py [--barcodetsv BARCODETSV] sampletsv output_prefix
    ```
 
+<br>
+
+<br>
 
 ## Basic Usage
 
