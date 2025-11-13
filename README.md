@@ -183,18 +183,15 @@ from ProdSeqAnalysis_utils import *
 
     _Arguments:_
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TExt
-
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TExt
-
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TExt
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **file\_path**: path to the TSV file
 
     _Return:_
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TEXT
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **values**: values in the TSV file
 
-    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **sample_nms**: sample (row) names in the TSV file
 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **col_nms**: column names in the TSV file
 
   * **_GenerateProdQCPlots_**
 
