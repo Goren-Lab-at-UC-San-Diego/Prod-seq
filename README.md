@@ -177,7 +177,7 @@ from ProdSeqAnalysis_utils import *
 
 **<ins>Documentation of additional functions:</ins>**
 
-  * **_ReadProdTSVFile_**
+  * **_ReadProdTSVFile_** _(file_path)_
 
     Read TSV output files into sample names (row names), column names, and values as lists.
 
@@ -218,15 +218,15 @@ from ProdSeqAnalysis_utils import *
     
     _Arguments:_
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **file\_path**: path to the TSV file
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _file\_path_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; path to the TSV file
 
     _Return:_
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **values**: values in the TSV file
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _values_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; values in the TSV file
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **sample_nms**: sample (row) names in the TSV file
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _sample_nms_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sample (row) names in the TSV file
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **col_nms**: column names in the TSV file
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _col_nms_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; column names in the TSV file
 
     <br>
 
