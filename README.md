@@ -267,7 +267,7 @@ from ProdSeqAnalysis_utils import *
 
     _Return:_
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **fig**: the PQ value heatmap
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _fig_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the PQ value heatmap
 
     <br>
 
