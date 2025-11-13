@@ -63,7 +63,7 @@ Usage:
 
     The third column should be “control” for each control Ab-oligo, and empty for the other Ab-oligos.
 
-    **Note:** it is required to have at least one control Ab-oligo.
+    **Note:** it is required to have at least one control ab-oligo.
 
 <br>
 
