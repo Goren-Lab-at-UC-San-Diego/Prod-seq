@@ -58,7 +58,7 @@ The second column of the corresponding lines should contain the reverse compleme
 
     CCTTGAACCACTTCTCTAAATCGACTCANNNNNNNNNNNNNNNgcttacaaccagactg
 
-    so the second column of SUZ12 should enter the reverse complement of AATCGACTCA, which is TGAGTCGATT.
+    so the second column of SUZ12 should enter the reverse complement of $${\color{green}AATCGACTCA}$$, which is $${\color{green}TGAGTCGATT}$$.
 
     The third column should be “control” for each control Ab-oligo, and empty for the other Ab-oligos. Note: it is required to have at least one control Ab-oligo.
 
