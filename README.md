@@ -42,7 +42,7 @@ Usage:
 
 _sampletsv_  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Path to the sample specification tsv file
 
-This tsv file should contain three columns, where the first column dictates a sample’s name, and the second and third columns of the corresponding row specify the path to the sample’s read1 and read2 files (as fastq.gz files). <\br>
+This tsv file should contain three columns, where the first column dictates a sample’s name, and the second and third columns of the corresponding row specify the path to the sample’s read1 and read2 files (as fastq.gz files). <br>
       
 _output_prefix_  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Output prefix
 
