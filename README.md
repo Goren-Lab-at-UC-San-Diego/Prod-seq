@@ -177,7 +177,7 @@ from ProdSeqAnalysis_utils import *
 
 **<ins>Documentation of additional functions:</ins>**
 
-  * **_ReadProdTSVFile_** _(file_path)_
+  * **_ReadProdTSVFile_**_(file_path)_
 
     Read TSV output files into sample names (row names), column names, and values as lists.
 
@@ -195,7 +195,7 @@ from ProdSeqAnalysis_utils import *
 
     <br>
 
-  * **_GenerateProdQCPlots_**
+  * **_GenerateProdQCPlots_**_(QC_tsv_path)_
 
     Generate QC plots for Prod-seq PPI sequencing result.
 
@@ -212,7 +212,7 @@ from ProdSeqAnalysis_utils import *
     <br>
 
 
-  * **_GroupedPPIHeatmap_**
+  * **_GroupedPPIHeatmap_**_(QC_tsv_path)_
 
     Generate PPI enrichment heatmaps for Prod-seq data visualization.
     
@@ -231,7 +231,7 @@ from ProdSeqAnalysis_utils import *
     <br>
 
 
-  * **_CalcPQFromUMICnts_**
+  * **_CalcPQFromUMICnts_**_(raw_cnts, control_idx = [7, 8])_
 
     Convert Prod-seq protein quantification (PQ) readout into (each sample separately) UMI proportions and UMI counts normalized by positive control protein barcodes.
     
@@ -239,7 +239,7 @@ from ProdSeqAnalysis_utils import *
 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _raw_cnts_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; raw UMI counts for each sample (can use the output from the function _ReadProdTSVFile_)
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _control_idx_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (optional) index for the positive control proteins in the samples (default: 7 and 8 for MED12 and CyclinC)
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _control_idx_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; index for the positive control proteins in the samples (default: 7 and 8 for MED12 and CyclinC)
 
     _Return:_
 
@@ -250,7 +250,7 @@ from ProdSeqAnalysis_utils import *
     <br>
 
 
-  * **_PQHeatmap_**
+  * **_PQHeatmap_**_(plot_data, sample_labels, plot_barcodes = bc_nms_default, cmap_use = "Greys")_
 
     Generate a PQ value heatmap for PQ data visualization.
     
@@ -260,10 +260,9 @@ from ProdSeqAnalysis_utils import *
 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _sample_labels_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the label for each sample
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _plot_barcodes_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (optional) the barcodes in the same order as the values in **plot_data** (default: the same order as the Prod-seq manuscript)
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _plot_barcodes_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the barcodes names in for **plot_data** values (default: the same as in the Prod-seq manuscript)
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _cmap_use_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (optional) the color map to use for the heatmap (default: "Greys")
-
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _cmap_use_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the color map to use for the heatmap
 
     _Return:_
 
