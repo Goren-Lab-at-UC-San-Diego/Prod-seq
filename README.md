@@ -201,15 +201,13 @@ from ProdSeqAnalysis_utils import *
 
     _Arguments:_
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **file\_path**: path to the TSV file
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **QC_tsv_path**: path to the _output_prefix.QCCnts.tsv_ output file
 
     _Return:_
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **values**: values in the TSV file
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **fig1**: a figure plotting the proportion of read depth that are (a) correct Prod-seq product and (b) deduplicated UMI combinations
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **sample_nms**: sample (row) names in the TSV file
-
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **col_nms**: column names in the TSV file
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **fig2**: a figure plotting the proportion of UMI pairs that are the self-self byproduct
 
     <br>
 
@@ -239,34 +237,37 @@ from ProdSeqAnalysis_utils import *
     
     _Arguments:_
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **file\_path**: path to the TSV file
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **raw_cnts**: raw UMI counts for each sample (can use the output from the function _ReadProdTSVFile_)
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **raw_cnts**: (optional) index for the positive control proteins in the samples (default: 7 and 8 for MED12 and CyclinC)
 
     _Return:_
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **values**: values in the TSV file
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **PQ_prop**: for each sample, the PQ UMI distribution normalized by the total number of UMIs in that sample
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **sample_nms**: sample (row) names in the TSV file
-
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **col_nms**: column names in the TSV file
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **PQ_Ctrl_normed**: for each sample, the PQ UMI distribution normalized by the positive control proteins' UMI counts
 
     <br>
 
 
   * **_PQHeatmap_**
 
-    Generate PQ value heatmaps for PQ data visualization.
+    Generate a PQ value heatmap for PQ data visualization.
     
     _Arguments:_
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **file\_path**: path to the TSV file
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **plot_data**: data to plot (recommended: log of _PQ_Ctrl_normed_ values from the function _CalcPQFromUMICnts_)
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **sample_labels**: the label for each sample
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **plot_barcodes**: (optional) the barcodes in the same order as the values in **plot_data** (default: the same order as the Prod-seq manuscript)
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **cmap_use**: (optional) the color map to use for the heatmap (default: "Greys")
+
 
     _Return:_
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **values**: values in the TSV file
-
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **sample_nms**: sample (row) names in the TSV file
-
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **col_nms**: column names in the TSV file
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **fig**: the PQ value heatmap
 
     <br>
 
