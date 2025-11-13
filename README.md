@@ -181,25 +181,21 @@ from ProdSeqAnalysis_utils import *
 
     Read TSV output files into sample names (row names), column names, and values as lists.
 
-<br>
 
   * **_GenerateProdQCPlots_**
 
     Generate QC plots for Prod-seq PPI sequencing result. 
 
-<br>
 
   * **_GroupedPPIHeatmap_**
 
     Generate PPI enrichment heatmaps for Prod-seq data visualization.
 
-<br>
 
   * **_CalcPQFromUMICnts_**
 
     Convert Prod-seq protein quantification (PQ) readout into (each sample separately) UMI proportions and UMI counts normalized by positive control protein barcodes.
 
-<br>
 
   * **_PQHeatmap_**
 
