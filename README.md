@@ -96,6 +96,8 @@ All the output files are tab-delimited files where the first row is the column h
 
     The enrichment value of each PPI in each sample calculated using the predicted background levels.
 
+    **Note:** the PPI enrichment values output here have NOT been normalized to the positive control PPI (MED12&CyclinC for the Prod-seq manuscript). Therefore, an additional normalization to the positive control PPI (by dividing) is needed before downstream applications.
+
 
 **Note:** the script runs a two-round GLM to estimate the PPI general background distribution, where the first round is only to exclude extreme positive outliers. In other words, it is expected that the first round of maximum likelihood estimation does not fully converge and it is normal behavior that the first round of GLM outputs the following warning messages:
 ```
@@ -223,7 +225,7 @@ from ProdSeqAnalysis_utils import *
     
     **_Arguments:_**
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _PPI_signals_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the PPI enrichment values (Note: to reproduce the results in the Prod-seq manuscript, the normalization of each value to MED12&CycC in the same sample by dividing needs to be explicitly performed)
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _PPI_signals_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the PPI enrichment values (**Note**: to reproduce the results in the Prod-seq manuscript, the normalization of each value to MED12&CycC in the same sample by dividing needs to be explicitly performed)
 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _sample_nms_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the names of the samples
 
