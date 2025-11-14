@@ -314,7 +314,7 @@ bash wget_example_data.sh
 <full_download_path>/PQSeq_Data_Analysis.py /path/to/example_pq_sampletsv.tsv output_prefix
 ```
 
-5. The expected output paths are stored in [example/example_output/](example/example_output/).
+5. The expected output files are stored in [example/example_output/](example/example_output/).
 
 6. Example plotting can be found in the [example notebook](example/example_plotting.ipynb).
 
