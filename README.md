@@ -173,7 +173,7 @@ This file contains the data processing and analysis functions used in **ProdSeq_
 
 ```
 import sys
-sys.path.insert(1, '<path_to_ProdSeqAnalysis_utils.py>')
+sys.path.insert(1, '<full_download_path>')
 from ProdSeqAnalysis_utils import *
 ```
 
