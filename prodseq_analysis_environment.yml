@@ -1,0 +1,13 @@
+name: prodseq
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13
+  - matplotlib
+  - numpy
+  - pandas
+  - tqdm
+  - scipy
+  - scikit-learn
+  - seaborn
+  - jupyterlab
