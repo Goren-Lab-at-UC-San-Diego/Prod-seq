@@ -292,6 +292,15 @@ from ProdSeqAnalysis_utils import *
     <br>
 
 
+## Example analysis
+
+All the files are in 
+
+Get example data: 
+```
+bash wget_example_data.sh
+```
+
 
 
 
