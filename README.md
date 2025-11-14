@@ -301,6 +301,21 @@ Get example data:
 bash wget_example_data.sh
 ```
 
+Modify the paths in [example_prod_sampletsv.tsv](example/example_input/example_prod_sampletsv.tsv) and [example_pq_sampletsv.tsv](example/example_input/example_pq_sampletsv.tsv) to make sure they are the absolution paths to the downloaded example data files.
+
+To run Prod-seq PPI analysis, run:
+
+```
+<full_download_path>/ProdSeq_Data_Analysis.py /path/to/example_prod_sampletsv.tsv output_prefix
+```
+
+To run Prod-seq PQ analysis, run:
+```
+<full_download_path>/PQSeq_Data_Analysis.py /path/to/example_pq_sampletsv.tsv output_prefix
+```
+
+The expected output paths are stored in [example/example_output/](example/example_output/).
+
 
 
 
