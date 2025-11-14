@@ -19,9 +19,9 @@ conda env create -f prodseq_analysis_environment.yml
    chmod +x <full_download_path>/ProdSeqAnalysis_utils.py
    ```
 
-4. To check that the scripts are ready to execute, run the following command. Correct setup should output the helper message specifying the usage of the script and arguments and options:
+4. To check that the scripts are ready to execute, run the following command. Correct setup should output the helper message specifying the usage of the script and arguments and options.
    ```
-   <full_download_path>/ProdSeq_Data_Analysis.py [--barcodetsv BARCODETSV] sampletsv output_prefix
+   <full_download_path>/ProdSeq_Data_Analysis.py --help
    ```
 
 <br>
