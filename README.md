@@ -311,7 +311,7 @@ All the files are in [_example_](example/).
 bash wget_example_data.sh
 ```
 
-2. Modify the paths in [_example_prod_sampletsv.tsv_](example/example_input/example_prod_sampletsv.tsv) and [_example_pq_sampletsv.tsv_](example/example_input/example_pq_sampletsv.tsv) to make sure they are the absolution paths to the downloaded example data files.
+2. Modify the paths to the _.fastq.gz_ files in [_example_prod_sampletsv.tsv_](example/example_input/example_prod_sampletsv.tsv) and [_example_pq_sampletsv.tsv_](example/example_input/example_pq_sampletsv.tsv) to make sure they are the absolution paths to the downloaded example data files.
 
 3. To run Prod-seq PPI analysis, run:
 
