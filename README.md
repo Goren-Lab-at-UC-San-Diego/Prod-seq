@@ -294,14 +294,14 @@ from ProdSeqAnalysis_utils import *
 
 ## Example analysis
 
-All the files are in [example](example/).
+All the files are in [_example_](example/).
 
 1. Get example data: 
 ```
 bash wget_example_data.sh
 ```
 
-2. Modify the paths in [example_prod_sampletsv.tsv](example/example_input/example_prod_sampletsv.tsv) and [example_pq_sampletsv.tsv](example/example_input/example_pq_sampletsv.tsv) to make sure they are the absolution paths to the downloaded example data files.
+2. Modify the paths in [_example_prod_sampletsv.tsv_](example/example_input/example_prod_sampletsv.tsv) and [_example_pq_sampletsv.tsv_](example/example_input/example_pq_sampletsv.tsv) to make sure they are the absolution paths to the downloaded example data files.
 
 3. To run Prod-seq PPI analysis, run:
 
@@ -314,9 +314,9 @@ bash wget_example_data.sh
 <full_download_path>/PQSeq_Data_Analysis.py /path/to/example_pq_sampletsv.tsv output_prefix
 ```
 
-5. The expected output files are stored in [example/example_output/](example/example_output/).
+5. The expected output files are stored in [_example/example_output/_](example/example_output/).
 
-6. Example plotting can be found in the [example notebook](example/example_plotting.ipynb).
+6. Example plotting can be found in the [_example notebook_](example/example_plotting.ipynb).
 
 
 
