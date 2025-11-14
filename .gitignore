@@ -1,1 +1,2 @@
 example/example_input/*.fastq.gz
+__pycache__/
