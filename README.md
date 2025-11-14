@@ -1,6 +1,9 @@
 # Prod-seq Analysis
 This repository hosts the source code for the data processing and analysis model of Prod-seq. Please see below for the installation instructions, basic usage, and the documentation of the importable functions.
 
+[Installation](#Installation)  
+[Emphasis](#emphasis) 
+
 ## Installation
 1. Create a conda environment using the [_prodseq_analysis_environment.yml_](/prodseq_analysis_environment.yml/) file (note: this step may take some time for conda to resolve the environment); conda will create an environment named “prodseq”
 ```
