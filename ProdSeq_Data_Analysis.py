@@ -205,10 +205,10 @@ for k in range(len(sample_spec_lines)):
     for i in range(len(target_bc_idxs)):
         for j in range(i + 1, len(target_bc_idxs)):
             
-            noise_out.write(str(noise_preds[k][target_bc_idxs[i]][target_bc_idxs[j]]))
+            noise_out.write(str(noise_preds[k][i][j]))
 
             curr_sig_diff = prod_umipair_normed[k][target_bc_idxs[i]][target_bc_idxs[j]]
-            curr_signal_norm = curr_sig_diff / noise_preds[k][target_bc_idxs[i]][target_bc_idxs[j]]
+            curr_signal_norm = curr_sig_diff / noise_preds[k][i][j]
             signal_out.write(str(curr_signal_norm))
 
             if (i == len(target_bc_idxs) - 2 and j == len(target_bc_idxs) - 1):
